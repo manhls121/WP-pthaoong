@@ -1,0 +1,235 @@
+/* Blog Section Of Standard Post */
+.single-blog-content {
+	padding-bottom: 8px;
+	line-height:    1.67;
+	.entry-title {
+		font-size:     25px;
+		padding:       5px 0 16px !important;
+		margin-bottom: 0;
+		-ms-word-wrap: break-word;
+		word-wrap:     break-word;
+	}
+
+	.post-content {
+		.quote {
+			padding: 24px 0 37px 44px;
+			i {
+				font-size:    40px;
+				float:        left;
+				margin-top:   -4px;
+				margin-right: 10px;
+			}
+			p {
+				font-style: italic;
+			}
+		}
+		.post-image {
+			@extend display-flex;
+			.images {
+				width:         50%;
+				padding-right: 15px;
+				&.images-2 {
+					padding-left:  15px;
+					padding-right: 0;
+				}
+			}
+			.info {
+				width: 50%;
+				span {
+					font-size:   18px;
+					font-weight: 500;
+					color:       #333;
+					padding:     45px 0 14px;
+					display:     block;
+				}
+				&.info-2 {
+					padding-left: 20px;
+				}
+			}
+		}
+		.text {
+			padding-top: 35px;
+		}
+	}
+
+	.final-blog {
+		padding: 40px 0 35px !important;
+		display: block !important;
+		width:   100%;
+		float:   left;
+		@include clearfix();
+		.socials, .product-share {
+			float: right;
+			> span {
+				display: none;
+			}
+		}
+		.tags {
+			float:       left;
+			padding-top: 10px;
+			&:before {
+				font:          normal normal normal 14px/1 FontAwesome;
+				content:       "\f02c";
+				padding-right: 5px;
+				color:         #999;
+			}
+			//a {
+			//	color: #666;
+			//}
+		}
+	}
+
+	.single-post-author {
+		overflow:       hidden;
+		padding-bottom: 75px;
+		.author-image {
+			width: 180px;
+			float: left;
+		}
+
+		.author-info {
+			//margin-left: 200px;
+			width:        calc(100% - 180px);
+			padding-left: 20px;
+			float:        left;
+			h5 {
+				margin: 0;
+			}
+			h5 a {
+				display:     block;
+				font-size:   20px;
+				font-weight: 500;
+				color:       #333;
+				padding:     30px 0 1px;
+			}
+			a {
+				color: #666;
+				&:hover {
+					color: #333;
+				}
+			}
+			p {
+				padding: 14px 0 16px;
+			}
+			.socials {
+				a {
+					font-size:     17px;
+					color:         #999;
+					padding-right: 14px;
+					&:hover {
+						color: #333;
+					}
+				}
+			}
+		}
+	}
+	.related-title, .comments-title {
+		margin-bottom: 30px;
+	}
+	.related-posts {
+		@extend display-flex;
+		margin: 0 -15px 40px;
+		.post-inner {
+			.post-image {
+				position: relative;
+				.overlay {
+					background: rgba(0, 0, 0, 0.2);
+				}
+				&:hover {
+					.overlay {
+						opacity: 1;
+					}
+				}
+			}
+			h5 {
+				font-size: 20px;
+				padding:   15px 0 9px;
+				@include transition(all 0.5s ease 0.1s);
+				&:hover {
+					padding-left: 7px !important;
+					&:before {
+						display: none !important;
+					}
+				}
+			}
+			.calendar {
+				font-size: 13px;
+				i {
+					padding-right: 6px;
+				}
+				.date {
+					padding-right: 12px;
+				}
+			}
+		}
+	}
+	blockquote {
+		padding:  24px 0 37px 44px;
+		margin:   0;
+		position: relative;
+		z-index:  1;
+		&:before {
+			float:        left;
+			margin-top:   -15px;
+			margin-right: 10px;
+			font:         normal normal normal 44px/1 FontAwesome;
+			content:      "\f10d";
+			position:     absolute;
+			left:         20px;
+			z-index:      -1;
+		}
+		p {
+			font-style:    italic;
+			margin-bottom: 5px;
+		}
+		cite {
+			font-weight: 500;
+			font-style:  normal;
+			color:       #333;
+		}
+	}
+	article {
+		@include clearfix();
+	}
+	.links-next-post {
+		margin-bottom: 50px;
+		margin-left:   0 !important;
+		width:         100%;
+		padding:       20px;
+		@include clearfix();
+		background:    #f7f7f7;
+		.nav-previous {
+			float: left;
+			i {
+				padding-right: 8px;
+			}
+		}
+		.nav-next {
+			float: right;
+			i {
+				padding-left: 8px;
+			}
+		}
+	}
+}
+
+@media (min-width: 782px) {
+	.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+		margin-left: 15px;
+	}
+	.wp-block-column:not(:last-child) {
+		margin-right: 15px;
+	}
+}
+
+@media (max-width: 781px) {
+	.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+		margin-left: 0;
+	}
+	.wp-block-column:not(:last-child) {
+		margin-right: 0;
+	}
+	.wp-block-column {
+		flex-basis: 100%;
+	}
+}

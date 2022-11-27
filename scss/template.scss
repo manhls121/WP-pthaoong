@@ -1,0 +1,207 @@
+.wrapper-container {
+	@include clearfix();
+}
+
+.content-area {
+	padding-top: 100px;
+	&.content-no-padding {
+		padding-top: 0;
+	}
+}
+
+.post-formats-wrapper, .format-video {
+	.video-container {
+		position:       relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height:         0;
+		iframe {
+			position: absolute;
+			top:      0;
+			left:     0;
+			width:    100%;
+			height:   100%;
+			border:   none;
+		}
+	}
+}
+
+.pading-lt-7x {
+	padding-left: 70px;
+}
+
+.padding-lr-60 {
+	padding-left:  80px;
+	padding-right: 80px;
+}
+
+.padding-bt-3x {
+	padding-bottom: 30px;
+}
+
+.wpb_gmaps_widget .wpb_wrapper {
+	padding: 0 !important;
+}
+
+.navigation, .woocommerce .site-main nav.woocommerce-pagination {
+	margin: 20px 0 0;
+	@include clearfix();
+	ul {
+		margin:     0;
+		text-align: center;
+		border:     none;
+		li {
+			display:    inline-block;
+			list-style: none;
+			border:     none;
+			.page-numbers {
+				font-size:      18px;
+				color:          #999;
+				padding:        8px 10px;
+				display:        inline-block;
+				text-align:     center;
+				vertical-align: middle;
+				line-height:    1;
+				background:     transparent;
+				@include transition(all 0.3s ease-in-out);
+				position:       relative;
+				&.next, &.prev {
+					text-decoration: none !important;
+				}
+			}
+			.dots {
+				border:     none !important;
+				background: transparent !important;
+				&:hover {
+					background:      transparent !important;
+					color:           #555 !important;
+					text-decoration: none;
+				}
+			}
+			a:hover, a:focus, span.current {
+				background:      transparent;
+				text-decoration: underline;
+				color:           #333;
+
+			}
+		}
+	}
+}
+
+.style-contact-h2 {
+	.wpcf7-form {
+		.wpcf7-form-control-wrap {
+			margin-bottom: 30px;
+			input, textarea {
+				margin-bottom: 0;
+				width:         100%;
+				padding:       10px 0;
+				text-indent:   20px;
+				background:    #fce2de;
+				border:        1px solid #fff;
+			}
+		}
+		.wpcf7-submit {
+			border:         none;
+			background:     #fff;
+			padding:        15px 40px;
+			color:          #333;
+			line-height:    1;
+			text-transform: uppercase;
+			font-weight:    600;
+			border-radius:  0;
+			&:hover {
+				background: #333;
+				color:      #fff;
+			}
+		}
+	}
+}
+
+.list-unstyled {
+	margin-left: 0;
+	padding-top: 10px;
+	li {
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.null-instagram-feed {
+	text-align: center;
+	.clear a {
+		color:     #999;
+		display:   block;
+		font-size: 1.2em;
+	}
+	.instagram-pics {
+		margin: 0 -7px;
+		@include clearfix();
+		li {
+			list-style: none;
+			width:      20%;
+			float:      left;
+			padding:    7px;
+			cursor:     pointer;
+			a {
+				position: relative;
+				&:before {
+					content:    "";
+					position:   absolute;
+					background: rgba(0, 0, 0, 0.2);
+					top:        0;
+					bottom:     0;
+					left:       0;
+					right:      0;
+					opacity:    0;
+				}
+				&:hover {
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.heading-special {
+	margin-bottom: 0 !important;
+	.widget-title {
+		@extend special-heading;
+	}
+}
+
+.block-border {
+	text-align: center;
+	border:     1px solid #e6e6e6;
+	.author-blog {
+		padding: 30px 20px;
+		h3 {
+			margin-bottom: 0;
+			margin-top:    25px;
+		}
+		small {
+			margin:    0 0 15px 0;
+			color:     #808080;
+			display:   inline-block;
+			font-size: 100%;
+		}
+	}
+}
+
+.wp-block-archives.wp-block-archives-dropdown {
+	margin-bottom: 15px;
+}
+
+.wp-block-latest-posts.is-grid {
+	margin-left: 0;
+}
+
+.single-blog-content {
+	h2, h3, h4, h5, h6 {
+		margin-top:    10px;
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,26 @@
+display-flex {
+	display: flex;
+	display: -webkit-flex;
+}
+
+special-heading {
+	text-align:     center;
+	position:       relative;
+	padding-bottom: 25px;
+	margin-bottom:  63px;
+	&:before {
+		position:           absolute;
+		left:               50%;
+		content:            '';
+		height:             13px;
+		width:              140px;
+		margin-left:        -70px;
+		display:            block;
+		bottom:             0;
+		-webkit-mask-image: url(images/line-title.svg);
+		mask-image:         url(images/line-title.svg);
+		background-color:   #ffa6a8;
+		-webkit-mask-size:  contain;
+		mask-size:          contain;
+	}
+}

@@ -1,0 +1,26 @@
+.wpcf7-form {
+	.wpcf7-form-control-wrap {
+		margin-bottom: 20px;
+		display:       block;
+		input, textarea {
+			padding: 9px 10px;
+			border:  1px solid $border_color;
+			@include input-placeholder(#333);
+		}
+		textarea {
+			height:  120px;
+			display: inherit;
+		}
+	}
+	.wpcf7-submit {
+		background:     #333;
+		color:          #fff;
+		border:         none;
+		padding:        12px 35px 12px 35px;
+		cursor:         pointer;
+		text-transform: uppercase;
+		&:hover {
+			background: #222;
+		}
+	}
+}

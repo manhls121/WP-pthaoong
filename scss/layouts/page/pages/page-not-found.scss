@@ -1,0 +1,91 @@
+.page-not-found {
+	@include background-size(cover);
+	background-repeat:   no-repeat;
+	background-position: center center;
+	background-image:    url('images/page-not-found-bg.jpg');
+	min-height:          600px;
+	.page-detail {
+		min-height: 100vh;
+		@extend display-flex;
+		@include align-items(center);
+		.page-inner {
+			text-align: center;
+			width:      560px;
+			margin:     0 auto;
+			transform:  translate(-50%, -50%);
+			top:        55%;
+			position:   absolute;
+			left:       50%;
+			.title {
+				font-weight: bold;
+			}
+			h2 {
+				font-size:      300px;
+				color:          #333;
+				padding-bottom: 5px;
+				margin-bottom:  30px;
+				&:before {
+					background: #fff;
+				}
+			}
+			p {
+				padding: 0 0 20px;
+			}
+			.au-btn-white {
+				i {
+					padding-left: 10px;
+				}
+			}
+			.btn-small {
+				padding:    14px 25px;
+				border:     none;
+				background: #fff;
+				color:      #333;
+				&:hover {
+					color: #fff;
+				}
+			}
+
+			.search-form {
+				@include clearfix();
+				max-width: 380px;
+				margin:    0 auto 70px auto;
+				label {
+					width: calc(100% - 100px);
+					float: left;
+					input {
+						padding: 10px 12px;
+						width:   100%;
+						border:  none;
+					}
+				}
+				.search-submit {
+					width:          100px;
+					float:          left;
+					border:         none;
+					padding:        10px 12px;
+					background:     #222;
+					color:          #fff;
+					text-transform: uppercase;
+					font-weight:    600;
+					font-family:    Raleway, Helvetica, Arial, sans-serif;
+					&:hover {
+						background: #fecacc;
+					}
+				}
+			}
+		}
+	}
+}
+
+.error404 {
+	#masthead {
+		display: none;
+	}
+	&.admin-bar {
+		margin-top: -32px;
+		#wpadminbar {
+			display: none !important;
+		}
+	}
+}
