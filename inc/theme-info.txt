@@ -1,0 +1,16 @@
+/*
+Theme Name: Uray
+Theme URI: http://uray.physcode.com/
+Author: PhysCode
+Author URI: http://physcode.com
+Description:  Theme is specially created for building the website shop
+Version: 1.0.8
+License: Themeforest Licence
+License URI: http://themeforest.net/licenses
+Text Domain: uray
+Tags: two-columns, left-sidebar, right-sidebar, editor-style, rtl-language-support, sticky-post, theme-options, translation-ready, translation-ready
+
+This theme, like WordPress, is license under split.
+
+WordPress Uray Theme is based on physcode http://physcode.net/
+*/
