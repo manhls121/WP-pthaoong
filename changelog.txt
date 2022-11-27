@@ -1,0 +1,29 @@
+/*version 1.1.0 -  */
+- Fixed: error in widget with WrodPress 5.8
+
+/*version 1.1.0 -  */
+- Updated: Out of date file with WooCommerce
+
+/*version 1.0.9 -  */
+- Fixed shortcode Banner HTML with elementor can't edit
+- Fixed Black screen in Single Product
+/*version 1.0.8 -  */
+- Updated: Out of date file with WooCommerce 4.4
+- Updated: Revolution Slider and WPBakery Page Builder to last version
+/*version 1.0.7 -  */
+-Updated: Out of date file with WooCommerce 4.x
+
+/*version 1.0.6 -  */
+-Added: Importer demo with use elementor page builder
+-Updated: Out of date file with WooCommerce 3.9
+-Updated: Revoslider to last version
+
+/*version 1.0.5 -  */
+- Fixed: Submenu lever 3 not show
+/*version 1.0.4 -  */
+- Fixed: Product variations images slider not working
+
+/*version 1.0.2 -  */
+- Fixed: Change primary color for product not work
+/*version 1.0.1 -  */
+- Fixed plugin Physc Builder
